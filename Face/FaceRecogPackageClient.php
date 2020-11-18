@@ -1,7 +1,7 @@
 <?php
-namespace Face_recog_package;
+namespace Face;
 
-class FaceRecogPackage extends \Grpc\BaseStub{
+class FaceRecogPackageClient extends \Grpc\BaseStub{
 
     public function __construct($hostname, $opts, $channel = null) {
         parent::__construct($hostname, $opts, $channel);
