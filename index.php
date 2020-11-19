@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-$client = new \Face\FaceRecogPackageClient('172.17.0.1:8787', [
+$client = new \Face\FaceRecogPackageClient('127.0.0.1:8787', [
     'credentials' => \Grpc\ChannelCredentials::createInsecure()
 ]);
 
