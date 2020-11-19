@@ -10,5 +10,5 @@ return array(
     'Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/Google/Protobuf'),
     'GPBMetadata\\Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/GPBMetadata/Google/Protobuf'),
     'GPBMetadata\\' => array($baseDir . '/GPBMetadata'),
-    'FaceRecogPackage\\' => array($baseDir . '/FaceRecogPackage'),
+    'Face\\' => array($baseDir . '/Face'),
 );
