@@ -14,7 +14,9 @@ $request->setName('22');
 $get = $client->SayHello($request)->wait();
 print_r($get);
 list($reply, $status) = $get;
-$data = $reply->getMessage();
+$data[] = $reply->getMessage();
+$data[] = $reply->getScore();
+$data[] = $reply->getNumber();
 var_dump($data);die;
 
 
