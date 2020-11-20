@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-$client = new \Face\FaceRecogPackageClient('127.0.0.1:8787', [
+$client = new \Rpc_package\HelloClient('127.0.0.1:5000', [
     'credentials' => \Grpc\ChannelCredentials::createInsecure()
 ]);
 
@@ -9,11 +9,9 @@ $client = new \Face\FaceRecogPackageClient('127.0.0.1:8787', [
 //$re->mesage = '';
 //$re->image = '';
 
-$request = new \Face\FaceServDetectRequest();
-$request->setImage('s');
-$request->setUserID('1');
-$request->setMessage('test');
-$get = $client->FaceServDetct($request)->wait();
+$request = new \Rpc_package\HelloRequest();
+$request->setName('22');
+$get = $client->SayHello($request)->wait();
 list($reply, $status) = $get;
 $data = $reply->getMessage();
 var_dump($data);die;
