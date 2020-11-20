@@ -13,7 +13,7 @@ class HelloClient extends \Grpc\BaseStub{
      * 用于请求和响应该服务
      */
     public function SayHello(\Rpc_package\HelloRequest $argument, $metadata=[], $options=[]){
-        return $this->_simpleRequest('/HelloWorldService/SayHello',
+        return $this->_simpleRequest('/rpc_package.HelloWorldService/SayHello',
             $argument,
             ['\Rpc_package\HelloReply', 'decode'],
             $metadata, $options);
