@@ -1,21 +1,15 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-
+print_r('welcome!');
 $client = new \Face\FaceRecogPackageClient('127.0.0.1:8787', [
     'credentials' => \Grpc\ChannelCredentials::createInsecure()
 ]);
 
-$request = new \Face\FaceServDetectRequest([
-    'userID' => 1,
-    'message' => 'test',
-    'image' => ''
-]);
-//$request->setImage('s');
-//$request->setUserID('1');
-//$request->setMessage('test');
-print_r($request);exit;
+$request = new \Face\FaceServDetectRequest();
+$request->setImage('s');
+$request->setUserID('1');
+$request->setMessage('test');
 $get = $client->FaceServDetct($request)->wait();
-
 list($reply, $status) = $get;
 $data = $reply->getMessage();
 var_dump($data);die;
