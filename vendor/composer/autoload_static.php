@@ -20,7 +20,7 @@ class ComposerStaticInit4ad43704fe43165bdb6addb88e66e570
         ),
         'F' => 
         array (
-            'Face\\' => 5,
+            'Face_recog_package\\' => 19,
         ),
     );
 
@@ -45,27 +45,27 @@ class ComposerStaticInit4ad43704fe43165bdb6addb88e66e570
         array (
             0 => __DIR__ . '/../..' . '/GPBMetadata',
         ),
-        'Face\\' => 
+        'Face_recog_package\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/Face',
+            0 => __DIR__ . '/../..' . '/Face_recog_package',
         ),
     );
 
     public static $classMap = array (
-        'Face\\DetResult' => __DIR__ . '/../..' . '/Face/DetResult.php',
-        'Face\\FaceRecogPackageClient' => __DIR__ . '/../..' . '/Face/FaceRecogPackageClient.php',
-        'Face\\FaceServ1VS1Request' => __DIR__ . '/../..' . '/Face/FaceServ1VS1Request.php',
-        'Face\\FaceServ1VS1Result' => __DIR__ . '/../..' . '/Face/FaceServ1VS1Result.php',
-        'Face\\FaceServ1VSNRequest' => __DIR__ . '/../..' . '/Face/FaceServ1VSNRequest.php',
-        'Face\\FaceServ1VSNResult' => __DIR__ . '/../..' . '/Face/FaceServ1VSNResult.php',
-        'Face\\FaceServDetectRequest' => __DIR__ . '/../..' . '/Face/FaceServDetectRequest.php',
-        'Face\\FaceServDetectResult' => __DIR__ . '/../..' . '/Face/FaceServDetectResult.php',
-        'Face\\FaceServMsgType' => __DIR__ . '/../..' . '/Face/FaceServMsgType.php',
-        'Face\\FaceServRegisterRequest' => __DIR__ . '/../..' . '/Face/FaceServRegisterRequest.php',
-        'Face\\FaceServRegisterResult' => __DIR__ . '/../..' . '/Face/FaceServRegisterResult.php',
-        'Face\\FaceServReplyMsg' => __DIR__ . '/../..' . '/Face/FaceServReplyMsg.php',
-        'Face\\FaceServRequestMsg' => __DIR__ . '/../..' . '/Face/FaceServRequestMsg.php',
-        'Face\\Points' => __DIR__ . '/../..' . '/Face/Points.php',
+        'Face_recog_package\\DetResult' => __DIR__ . '/../..' . '/Face_recog_package/DetResult.php',
+        'Face_recog_package\\FaceRecogPackageClient' => __DIR__ . '/../..' . '/Face_recog_package/FaceRecogPackageClient.php',
+        'Face_recog_package\\FaceServ1VS1Request' => __DIR__ . '/../..' . '/Face_recog_package/FaceServ1VS1Request.php',
+        'Face_recog_package\\FaceServ1VS1Result' => __DIR__ . '/../..' . '/Face_recog_package/FaceServ1VS1Result.php',
+        'Face_recog_package\\FaceServ1VSNRequest' => __DIR__ . '/../..' . '/Face_recog_package/FaceServ1VSNRequest.php',
+        'Face_recog_package\\FaceServ1VSNResult' => __DIR__ . '/../..' . '/Face_recog_package/FaceServ1VSNResult.php',
+        'Face_recog_package\\FaceServDetectRequest' => __DIR__ . '/../..' . '/Face_recog_package/FaceServDetectRequest.php',
+        'Face_recog_package\\FaceServDetectResult' => __DIR__ . '/../..' . '/Face_recog_package/FaceServDetectResult.php',
+        'Face_recog_package\\FaceServMsgType' => __DIR__ . '/../..' . '/Face_recog_package/FaceServMsgType.php',
+        'Face_recog_package\\FaceServRegisterRequest' => __DIR__ . '/../..' . '/Face_recog_package/FaceServRegisterRequest.php',
+        'Face_recog_package\\FaceServRegisterResult' => __DIR__ . '/../..' . '/Face_recog_package/FaceServRegisterResult.php',
+        'Face_recog_package\\FaceServReplyMsg' => __DIR__ . '/../..' . '/Face_recog_package/FaceServReplyMsg.php',
+        'Face_recog_package\\FaceServRequestMsg' => __DIR__ . '/../..' . '/Face_recog_package/FaceServRequestMsg.php',
+        'Face_recog_package\\Points' => __DIR__ . '/../..' . '/Face_recog_package/Points.php',
         'GPBMetadata\\Face' => __DIR__ . '/../..' . '/GPBMetadata/Face.php',
         'GPBMetadata\\Google\\Protobuf\\Any' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Any.php',
         'GPBMetadata\\Google\\Protobuf\\Api' => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf/Api.php',
@@ -202,6 +202,7 @@ class ComposerStaticInit4ad43704fe43165bdb6addb88e66e570
         'Grpc\\RpcServer' => __DIR__ . '/..' . '/grpc/grpc/src/lib/RpcServer.php',
         'Grpc\\ServerStreamingCall' => __DIR__ . '/..' . '/grpc/grpc/src/lib/ServerStreamingCall.php',
         'Grpc\\UnaryCall' => __DIR__ . '/..' . '/grpc/grpc/src/lib/UnaryCall.php',
+        'Rpc_package\\HelloClient' => __DIR__ . '/../..' . '/Rpc_package/HelloClient.php',
         'Rpc_package\\HelloReply' => __DIR__ . '/../..' . '/Rpc_package/HelloReply.php',
         'Rpc_package\\HelloRequest' => __DIR__ . '/../..' . '/Rpc_package/HelloRequest.php',
     );
