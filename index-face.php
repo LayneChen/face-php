@@ -7,8 +7,11 @@ $client = new \Face_recog_package\FaceRecogPackageClient('127.0.0.1:8787', [
 
 $request = new \Face_recog_package\FaceServDetectRequest();
 $request->setUserID(2);
+var_dump($request->getUserID());
 $request->setMessage('test');
+var_dump($request->getMessage());
 $request->setImage('23');
+var_dump($request->getImage());
 $get = $client->FaceServDetect($request)->wait();
 print_r($get);
 list($reply, $status) = $get;
