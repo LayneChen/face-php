@@ -17,7 +17,9 @@ $get = $client->FaceServ1VS1($requestMsg)->wait();
 print_r($get);
 list($reply, $status) = $get;
 $data[] = $reply->getType();
-$data[] = $reply->getRet1Vs1();
+$data[] = $reply->getRet1Vs1()->getMessage();
+$data[] = $reply->getRet1Vs1()->getScore();
+$data[] = $reply->getRet1Vs1()->getUserID();
 var_dump($data);die;
 
 
