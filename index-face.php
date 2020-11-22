@@ -13,7 +13,7 @@ $request->setImage2('2341234');
 var_dump($request);
 $requestMsg = new \Face_recog_package\FaceServRequestMsg();
 $requestMsg->setType('2');
-$requestMsg->getReq1Vs1($request);
+$requestMsg->setReq1Vs1($request);
 var_dump($requestMsg);
 $get = $client->FaceServ1VS1($requestMsg)->wait();
 print_r($get);
