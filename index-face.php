@@ -10,15 +10,14 @@ $request->setUserID(2);
 $request->setMessage('test');
 $request->setImage1('2341234');
 $request->setImage2('2341234');
-var_dump($request);
 $requestMsg = new \Face_recog_package\FaceServRequestMsg();
 $requestMsg->setType('2');
 $requestMsg->setReq1Vs1($request);
-var_dump($requestMsg);
 $get = $client->FaceServ1VS1($requestMsg)->wait();
 print_r($get);
 list($reply, $status) = $get;
 $data[] = $reply->getType();
+$data[] = $reply->getRet1Vs1();
 var_dump($data);die;
 
 
