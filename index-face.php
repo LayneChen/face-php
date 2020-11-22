@@ -45,11 +45,10 @@ var_dump($data);
 
 // FaceServRegister
 echo "FaceServRegister :";
-$request = new \Face_recog_package\FaceServ1VS1Request();
-$request->setUserID(2);
+$request = new \Face_recog_package\FaceServRegisterRequest();
+$request->setUserID(6);
 $request->setMessage('test');
-$request->setImage1('2341234');
-$request->setImage2('2341234');
+$request->setImage('2341234');
 $requestMsg = new \Face_recog_package\FaceServRequestMsg();
 $requestMsg->setType('3');
 $requestMsg->setReq1Vs1($request);
