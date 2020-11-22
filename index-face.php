@@ -5,19 +5,21 @@ $client = new \Face_recog_package\FaceRecogPackageClient('127.0.0.1:8787', [
 ]);
 
 
-$request = new \Face_recog_package\FaceServDetectRequest();
+$request = new \Face_recog_package\FaceServ1VS1Request();
 $request->setUserID(2);
 var_dump($request->getUserID());
 $request->setMessage('test');
 var_dump($request->getMessage());
-$request->setImage('23');
-var_dump($request->getImage());
-$get = $client->FaceServDetect($request)->wait();
+$request->setImage1('2341234');
+var_dump($request->getImage1());
+$request->setImage2('2341234');
+var_dump($request->getImage2());
+$get = $client->FaceServ1VS1($request)->wait();
 print_r($get);
 list($reply, $status) = $get;
 $data[] = $reply->getMessage();
 $data[] = $reply->getRetCode();
-$data[] = $reply->getRetDets();
+$data[] = $reply->getScore();
 $data[] = $reply->getUserID();
 var_dump($data);die;
 
