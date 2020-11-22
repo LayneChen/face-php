@@ -51,7 +51,7 @@ $request->setMessage('test');
 $request->setImage('2341234');
 $requestMsg = new \Face_recog_package\FaceServRequestMsg();
 $requestMsg->setType('3');
-$requestMsg->setReq1Vs1($request);
+$requestMsg->setReqRegister($request);
 $get = $client->FaceServRegister($requestMsg)->wait();
 print_r($get);
 list($reply, $status) = $get;
